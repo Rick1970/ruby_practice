@@ -20,8 +20,8 @@ dir = gets.chomp
 while dir == "Y"
   puts "Enter your city name."
   input = gets.chomp
-  get_ac(input, dictionary)
-  puts "The area code for #{input} is #{get_ac(input, dictionary)}"
+  result = get_ac(input, dictionary)
+  puts "The area code for #{input} is #{result}"
   puts "Do you want to search again? Y/N"
   dir = gets.chomp
 end
